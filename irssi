@@ -12,7 +12,7 @@ fi
 port_open=`netstat -ano tcp | grep 6667`
 if [ "$port_open" != "" ]; then
     echo "Port 6667 is already open..."
-    echo "> netstat -atlnp | grep 6667"
+    echo "> netstat -ano | grep 6667"
     echo $port_open
     exit 0
 fi

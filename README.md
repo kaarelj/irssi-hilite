@@ -23,3 +23,4 @@ Enter `irssi username@host` to start `netcat` and initialise the SSH session to 
 
 ### Credits
 Irssi script based on [Irssi notify for Desktop Notify](https://github.com/tbaumann/Irssi-nofity-for-Desktop--Notify).
+[Shell script for killing subprocesses](http://www.unix.com/17971-post5.html)
