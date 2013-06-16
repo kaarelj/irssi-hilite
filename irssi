@@ -18,10 +18,10 @@ if [ "$port_open" != "" ]; then
 fi
 
 # Start the listener in background
-./irssi-notification-listener &
+irssi-notification-listener &
 
 # Start a SSH session to the remote Irssi box
 ssh -R 6667:localhost:6667 $host
 
 # Clean up the listener
-./kill-subprocs $$
+kill-subprocs $$
