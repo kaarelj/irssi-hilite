@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Listen for output on port 6667 and display a notification
+while :
+do
+    nc -l 6667 | xargs notify-send -c "im.received" -i face-monkey
+    sleep 30 # Wait for 30 seconds before starting another listener
+done
