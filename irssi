@@ -8,11 +8,11 @@ if [ "$host" = "" ]; then
     exit 0
 fi
 
-# Check if port is already used
-port_open=`netstat -ano tcp | grep 6667`
+# Check if this exact port is already used
+port_open=`netstat -ano tcp | grep \<6667\>`
 if [ "$port_open" != "" ]; then
     echo "Port 6667 is already open..."
-    echo "> netstat -ano | grep 6667"
+    echo "> netstat -ano tcp | grep \<6667\>"
     echo $port_open
     exit 0
 fi
